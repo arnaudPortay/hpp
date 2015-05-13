@@ -24,7 +24,7 @@ public class BenchmarkSorting {
 	@Setup
 	public void prepare(){
 		m=new MergeSort();
-		tab=m.tabVal(50);
+		tab=m.tabVal(1000000);
 	}
 	
 	
