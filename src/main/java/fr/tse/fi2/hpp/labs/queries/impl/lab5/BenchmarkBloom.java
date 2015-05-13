@@ -25,8 +25,8 @@ import fr.tse.fi2.hpp.labs.queries.AbstractQueryProcessor;
 @State(Scope.Thread)
 public class BenchmarkBloom {
 	
-	final static Logger logger = LoggerFactory.getLogger(BloomFilter.class);
-	private BloomFilter q;
+	final static Logger logger = LoggerFactory.getLogger(BloomFilterQuery.class);
+	private BloomFilterQuery q;
 	
 	@Setup
 	public void prepare(){
@@ -39,7 +39,7 @@ public class BenchmarkBloom {
 		// Query processors
 		List<AbstractQueryProcessor> processors = new ArrayList<>();
 		// Add you query processor here
-		q = new BloomFilter(measure);
+		q = new BloomFilterQuery(measure);
 		processors.add(q);
 		
 		// Register query processors

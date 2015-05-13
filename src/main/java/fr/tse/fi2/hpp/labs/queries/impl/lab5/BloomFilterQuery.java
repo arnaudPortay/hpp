@@ -12,14 +12,14 @@ import fr.tse.fi2.hpp.labs.beans.DebsRecord;
 import fr.tse.fi2.hpp.labs.beans.measure.QueryProcessorMeasure;
 import fr.tse.fi2.hpp.labs.queries.AbstractQueryProcessor;
 
-public class BloomFilter extends AbstractQueryProcessor {
+public class BloomFilterQuery extends AbstractQueryProcessor {
 
 	private final int k;
 	private String[] salt;
 	private BitSet bloomFilter;
 	
 	
-	public BloomFilter(QueryProcessorMeasure measure){
+	public BloomFilterQuery(QueryProcessorMeasure measure){
 		super(measure);
 
 		k=10;

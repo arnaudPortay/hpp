@@ -16,7 +16,7 @@ public class SumQueryThread extends AbstractQueryProcessor {
 	protected void process(DebsRecord record) {
 		// TODO Auto-generated method stub
 		sumFares += record.getFare_amount();
-		this.sumList.add(sumFares);
+		//this.sumList.add(sumFares);
 	}
 
 }

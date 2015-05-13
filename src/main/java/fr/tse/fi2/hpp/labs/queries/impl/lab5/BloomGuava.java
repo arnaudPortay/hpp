@@ -26,7 +26,7 @@ public class BloomGuava extends AbstractQueryProcessor {
 			}
 		};
 		
-		BloomFilter<DebsRecord> filtre = new BloomFilter.create(recordFunnel,1000,0.01);
+		//BloomFilter<DebsRecord> filtre = new BloomFilter.create(recordFunnel,1000,0.01);
 		
 	}
 
