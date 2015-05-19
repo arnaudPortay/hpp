@@ -12,9 +12,13 @@ public class TestSort {
 	@Test
 	public void test() {
 		MergeSort m = new MergeSort();
-		int[] test = m.tabVal(20);
+		int[] test = m.tabVal(10);
 		int[] res=m.tri(test);
-		int[] tri = test;
+		int[] tri = new int[10];
+		
+		for (int i = 0; i < 10; i++){
+			tri[i] = test[i];	
+		}
 		Arrays.sort(tri);
 		
 		Assert.assertArrayEquals(tri, res);
